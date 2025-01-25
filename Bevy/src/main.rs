@@ -3,10 +3,10 @@ use bevy::prelude::*;
 fn main() {
     App::new()
         .add_plugins(DefaultPlugins)
-        .add_system(Startup, (setup))
+        .add_systems(Startup, setup)
         .run();
 }
 
-fn setup(mut commands: Commands) {
+fn setup() {
     println!("Hello world!")
 }
